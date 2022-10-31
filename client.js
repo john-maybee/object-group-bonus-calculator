@@ -48,10 +48,51 @@ console.log('array of employee data: ',  employees );
 
 // This function will calculate 1 employee's bonus!
 //
+// run through the objects, take in one employeee object and return a new one with the following
+  // name, bonus percentage, total compensation (base anual + bonus), and total bonus
+  // individual bonus rules: rating 2 or below = no bonus; 3 = 4% of base; 4 = 6% of base; 5 = 10% of base
+    // OBJECTIVE 1 ^^^
+    
+  // if employee number is 4 digits long = additional 5%
+  // if annual is > 65k = bonus adjusted -1%
+  // no bonus below 0% or above 13%
+let bonusPercentage = 0;
+employees.push(bonusPercentage);
+console.log(employees);
+
+let employee = employees.name;
+
+console.log(employees);
+
 function calculateIndividualEmployeeBonus( employee ) {  
   // your logic here
-  
-  
+  for (let i=0; i<employees.length; i++) {
+    if (employees.reviewRating <= 2) {
+      return employees.bonusPercentage + 0 }
+    if (employees.reviewRating = 3) {
+      return employees.bonusPercentage + .04 }
+    if (employees.reviewRating = 4) {
+      return employees.bonusPercentage + .06}
+    if (employees.reviewRating = 5) {
+      return employees.bonusPercentage + .1}
+  }
+
+  // console.log(employees.bonusPercentage);
   // return new object with bonus results
 
 }
+console.log(calculateIndividualEmployeeBonus(employees));
+
+// for ()
+// function findBonusPercentage(employees) {
+//   let bonusPercentage = 0;
+//   for(employeesObject of employees) {
+//       if(employeesObject.reviewRating <= 2) {
+//           return (employeesObject.push(bonusPercentage));
+//       }
+//   }
+//   return bonusPercentage;
+// }
+
+// console.log(findBonusPercentage(employees));
+
