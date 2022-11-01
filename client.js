@@ -53,14 +53,21 @@ console.log('array of employee data: ',  employees );
   // individual bonus rules: rating 2 or below = no bonus; 3 = 4% of base; 4 = 6% of base; 5 = 10% of base
     // OBJECTIVE 1 ^^^
     
-  // if employee number is 4 digits long = additional 5%
-  // if annual is > 65k = bonus adjusted -1%
-  // no bonus below 0% or above 13%
-let bonusPercentage = 0;
-employees.push(bonusPercentage);
-console.log(employees);
+    
+    // if employee number is 4 digits long = additional 5%
+    // if annual is > 65k = bonus adjusted -1%
+    // no bonus below 0% or above 13%
+    // let bonusPercentage = 0;
+// ATTEMPT:
+//-------------------------------------------------------------------
+// for (let i = 0; i<employees.length; i++){
+//   if(i <= employees.length){
+//   console.log(employees.push(bonusPercentage));
+//   }
+// }
+// console.log(employees);
 
-let employee = employees.name;
+// let employee = employees.name; Unsure if needed
 
 console.log(employees);
 
@@ -81,8 +88,10 @@ function calculateIndividualEmployeeBonus( employee ) {
   // return new object with bonus results
 
 }
-console.log(calculateIndividualEmployeeBonus(employees));
+console.log(calculateIndividualEmployeeBonus(employees[i]));
 
+// FIRST ATTEMPT:
+// ------------------------------------------------------------
 // for ()
 // function findBonusPercentage(employees) {
 //   let bonusPercentage = 0;
